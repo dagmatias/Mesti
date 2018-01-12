@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.miasteniagravis.project.matias.mesti.Presentacion">
+
+
+    <TextView
+        android:id="@+id/presentaciontextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="¡Hola!"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/presentaciontextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/presentaciontextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="soy"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/presentaciontextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Qué bueno tenerte por acá!"
+        tools:ignore="HardcodedText"
+        android:layout_marginBottom="77dp"
+        android:layout_above="@+id/presentaciontextView6"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/presentaciontextView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Convirtamos esta aventura de ser distintos"
+        android:gravity="center"
+        android:layout_alignTop="@+id/presentaciontextView3"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/presentaciontextView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="en un camino mas llevadero"
+        tools:ignore="HardcodedText"
+        android:textSize="15sp"
+        android:layout_below="@+id/presentaciontextView4"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/presentaciontextView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desliza para conocer de que va esto"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp"
+        tools:ignore="HardcodedText,SmallSp"
+        android:textSize="10sp"/>
+
+    <ImageView
+        android:id="@+id/presentacionimageView"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        app:srcCompat="@drawable/mesti1"
+        tools:ignore="ContentDescription"
+        android:layout_below="@+id/presentaciontextView2"
+        android:layout_alignEnd="@+id/presentaciontextView6" />
+
+
+</RelativeLayout>
