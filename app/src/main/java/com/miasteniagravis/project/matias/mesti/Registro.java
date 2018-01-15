@@ -1,61 +1,44 @@
 package com.miasteniagravis.project.matias.mesti;
 
-import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
-import android.os.Handler;
-import android.support.v4.print.PrintHelper;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class pregunta extends AppCompatActivity {
+public class Registro extends AppCompatActivity {
 
     private TextView Texto;
-    private TextView Texto1;
     private TextView Texto2;
     private TextView Texto3;
     private TextView Texto4;
+    private TextView Texto5;
 
 
     private Typeface RalewayRegular;
-    private Typeface RalewayMedium;
-
-
+    private Typeface SnigletRegular;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pregunta);
+        setContentView(R.layout.activity_registro);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         String fuente1 = "fonts/RalewayRegular.ttf";
         this.RalewayRegular = Typeface.createFromAsset(getAssets(),fuente1);
-        String fuente2 = "fonts/RalewayMedium.ttf";
-        this.RalewayMedium = Typeface.createFromAsset(getAssets(),fuente2);
+        String fuente2 = "fonts/SnigletRegular.ttf";
+        this.SnigletRegular = Typeface.createFromAsset(getAssets(),fuente2);
 
         Texto = (TextView) findViewById(R.id.button);
         Texto.setTypeface(RalewayRegular);
-        Texto1 = (TextView) findViewById(R.id.button1);
-        Texto1.setTypeface(RalewayRegular);
         Texto2 = (TextView) findViewById(R.id.textView);
-        Texto2.setTypeface(RalewayRegular);
+        Texto2.setTypeface(SnigletRegular);
         Texto3 = (TextView) findViewById(R.id.textView2);
-        Texto3.setTypeface(RalewayMedium);
+        Texto3.setTypeface(RalewayRegular);
         Texto4 = (TextView) findViewById(R.id.textView3);
-        Texto4.setTypeface(RalewayMedium);
+        Texto4.setTypeface(RalewayRegular);
+        Texto5 = (TextView) findViewById(R.id.textView4);
+        Texto5.setTypeface(RalewayRegular);
 
-
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-
-                Intent intent = new Intent(pregunta.this, Login.class);
-                startActivity(intent);
-            }
-        },5000);
     }
 }
