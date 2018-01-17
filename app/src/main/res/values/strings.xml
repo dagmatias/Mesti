@@ -9,4 +9,7 @@
     <string name="tyc">Terminos y Condiciones</string>
     <string name="cuenta">Ya tengo Cuenta</string>
     <string name="registrarme">Registrarme</string>
+    <string name="continuar">Continuar</string>
+
+
 </resources>

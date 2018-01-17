@@ -78,7 +78,7 @@
     <Button
         android:id="@+id/button"
         android:layout_width="0dp"
-        android:layout_height="48dp"
+        android:layout_height="40dp"
         android:text="@string/registrarme"
         android:textColor="@color/blanco"
         android:background="@drawable/btnlogin"
