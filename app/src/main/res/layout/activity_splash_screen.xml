@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.miasteniagravis.project.matias.mesti.SplashScreen">
+    tools:context="com.miasteniagravis.project.matias.mesti.SplashScreen"
+    android:background="@color/blanco">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="628dp"
+        android:layout_height="542dp"
         app:srcCompat="@drawable/mesticarga"
         tools:ignore="ContentDescription,MissingConstraints"
         android:contentDescription=""
- />
-</android.support.constraint.ConstraintLayout>
+        tools:layout_editor_absoluteX="-142dp"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

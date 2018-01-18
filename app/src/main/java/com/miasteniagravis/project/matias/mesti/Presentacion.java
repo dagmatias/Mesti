@@ -48,7 +48,7 @@ public class Presentacion extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent intent = new Intent(Presentacion.this, pregunta.class);
+                Intent intent = new Intent(Presentacion.this, Presentacion2.class);
                 startActivity(intent);
             }
         },5000);

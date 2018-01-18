@@ -1,7 +1,9 @@
 package com.miasteniagravis.project.matias.mesti;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -40,5 +42,14 @@ public class Presentacion2 extends AppCompatActivity {
         Texto3.setTypeface(RalewayMedium);
         Texto4 = (TextView) findViewById(R.id.textView3);
         Texto4.setTypeface(RalewayMedium);
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+                Intent intent = new Intent(Presentacion2.this, Login.class);
+                startActivity(intent);
+            }
+        },5000);
     }
 }

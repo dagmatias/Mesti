@@ -19,7 +19,8 @@ public class Login extends AppCompatActivity {
     private TextView Texto7;
 
     private Typeface RalewayRegular;
-    private Typeface SnigletRegular ;
+    private Typeface SnigletRegular;
+    private Typeface RalewayBold;
 
 
     @Override
@@ -32,6 +33,8 @@ public class Login extends AppCompatActivity {
         this.RalewayRegular = Typeface.createFromAsset(getAssets(),fuente1);
         String fuente2 = "fonts/SnigletRegular.ttf";
         this.SnigletRegular = Typeface.createFromAsset(getAssets(),fuente2);
+        String fuente3 = "fonts/RalewayBold.ttf";
+        this.RalewayBold = Typeface.createFromAsset(getAssets(),fuente3);
 
         Texto = (TextView) findViewById(R.id.button);
         Texto.setTypeface(RalewayRegular);
@@ -46,7 +49,7 @@ public class Login extends AppCompatActivity {
         Texto6 = (TextView) findViewById(R.id.textView5);
         Texto6.setTypeface(RalewayRegular);
         Texto7 = (TextView) findViewById(R.id.textView6);
-        Texto7.setTypeface(RalewayRegular);
+        Texto7.setTypeface(RalewayBold);
 
         new Handler().postDelayed(new Runnable() {
             @Override

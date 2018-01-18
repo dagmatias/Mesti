@@ -19,6 +19,7 @@ public class Registro extends AppCompatActivity {
 
     private Typeface RalewayRegular;
     private Typeface SnigletRegular;
+    private Typeface RalewayBold;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,8 @@ public class Registro extends AppCompatActivity {
         this.RalewayRegular = Typeface.createFromAsset(getAssets(),fuente1);
         String fuente2 = "fonts/SnigletRegular.ttf";
         this.SnigletRegular = Typeface.createFromAsset(getAssets(),fuente2);
+        String fuente3 = "fonts/RalewayBold.ttf";
+        this.RalewayBold = Typeface.createFromAsset(getAssets(),fuente3);
 
         Texto = (TextView) findViewById(R.id.button);
         Texto.setTypeface(RalewayRegular);
@@ -40,7 +43,7 @@ public class Registro extends AppCompatActivity {
         Texto4 = (TextView) findViewById(R.id.textView3);
         Texto4.setTypeface(RalewayRegular);
         Texto5 = (TextView) findViewById(R.id.textView4);
-        Texto5.setTypeface(RalewayRegular);
+        Texto5.setTypeface(RalewayBold);
 
         new Handler().postDelayed(new Runnable() {
             @Override
