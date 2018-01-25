@@ -26,8 +26,9 @@
         <activity android:name=".Presentacion2" />
         <activity android:name=".Login" />
         <activity android:name=".Registro" />
-        <activity android:name=".Preguntas0" />
-        <activity android:name=".Pregunta0"></activity>
+        <activity android:name=".Pregunta0" />
+        <activity android:name=".Pregunta1" />
+        <activity android:name=".comenzar"></activity>
     </application>
 
 </manifest>
